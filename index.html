@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VOID GEAR | Главная</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="container">
+<nav>
+<a href="index.html" class="logo">VOID<span>GEAR</span></a>
+<div class="nav-links">
+<a href="index.html" class="active">Главная</a>
+<a href="catalog.html">Каталог</a>
+<a href="contact.html">Контакты</a>
+</div>
+<button id="openCartBtn" class="cart-btn">Корзина (0)</button>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="container">
+  <div class="carousel">
+    <div class="carousel-track">
+      
+      <div class="carousel-slide">
+        <img src="arena.jpg" alt="Gaming Setup" class="slide-img">
+        <h1>Профессиональная периферия для киберспорта</h1>
+        <p>Топовое оборудование для победы</p>
+      </div>
+
+      <div class="carousel-slide">
+        <img src="razer.png" alt="Keyboard" class="slide-img">
+        <h1>Новая коллекция Razer и Logitech</h1>
+        <p>Скидки до 20% на беспроводные модели</p>
+      </div>
+
+      <div class="carousel-slide">
+        <img src="rumap.avif" alt="Headphones" class="slide-img">
+        <h1>Быстрая доставка по всей России</h1>
+        <p>Гарантия качества и официальная поддержка</p>
+      </div>
+      
+    </div>
+    <button class="carousel-btn prev">‹</button>
+    <button class="carousel-btn next">›</button>
+  </div>
+</section>
+
+<section class="container" style="text-align: center; padding-top: 20px;">
+<h2>Добро пожаловать в VoidGear</h2>
+<p style="color: var(--text-muted); max-width: 700px; margin: 0 auto 30px;">
+Мы предлагаем лучшие игровые аксессуары для профессионалов и любителей. 
+У нас вы найдете мыши, клавиатуры, гарнитуры и коврики от мировых брендов.
+</p>
+<a href="catalog.html" class="buy-btn" style="display: inline-block; width: auto; padding: 12px 30px;">Перейти в каталог</a>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<p>&copy; 2026 VoidGear.</p>
+</div>
+</footer>
+
+<div id="cartModal" class="modal-overlay">
+<div class="modal-box">
+<button class="modal-close">&times;</button>
+<h3>Ваша корзина</h3>
+<div id="cartList" class="cart-list">
+<p class="empty-msg">Корзина пуста</p>
+</div>
+<button class="submit-btn" style="margin-top: 15px;">Перейти к оформлению</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
